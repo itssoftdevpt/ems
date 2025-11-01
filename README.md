@@ -49,6 +49,20 @@ This repository contains a Django-based, schema-level multi-tenant implementatio
    python manage.py runserver
    ```
 
+## Frontend workspaces
+
+The repository also ships with a `frontend/` directory that hosts independent Vite + React + TypeScript single-page applications for each major EMS module (tenant portal, students, academics, HR, fees, communications, calendars, and reporting). Every workspace has its own `package.json`, TypeScript configuration, and development server so teams can iterate in parallel.
+
+To work with a specific module:
+
+```bash
+cd frontend/<module>
+npm install
+npm run dev
+```
+
+Each workspace proxies API calls under `/api` to the Django backend running on `http://localhost:8000`, allowing the frontend and backend stacks to run side-by-side.
+
 ## API Overview
 
 The project exposes versionless REST endpoints grouped by responsibility:

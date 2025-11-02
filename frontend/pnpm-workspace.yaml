@@ -1,0 +1,9 @@
+packages:
+  - ./tenant-portal
+  - ./students
+  - ./academics
+  - ./hr
+  - ./fees
+  - ./communications
+  - ./calendars
+  - ./reporting

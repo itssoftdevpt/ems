@@ -1,0 +1,17 @@
+{
+  "name": "ems-frontend",
+  "private": true,
+  "workspaces": [
+    "./tenant-portal",
+    "./students",
+    "./academics",
+    "./hr",
+    "./fees",
+    "./communications",
+    "./calendars",
+    "./reporting"
+  ],
+  "scripts": {
+    "bootstrap": "npm install --workspaces"
+  }
+}
